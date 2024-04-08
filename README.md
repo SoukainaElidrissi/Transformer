@@ -30,21 +30,3 @@ This synthesis outlines the process of setting up and pre-training the GPT-2 mod
 
 ---
 
-## Fine-tuning GPT-2 on a jokes dataset in PyTorch
-
-This notebook was created as a part of a blog post - Fine-tuning large Transformer models on a single GPU in PyTorch - Teaching GPT-2 a sense of humor. Here I demonstrate how to fine-tune a pre-trained GPT-2 model on a jokes dataset.
-
-Let's see if the model can learn to crack some jokes!
-
-```python
-import torch
-from transformers import GPT2Tokenizer, GPT2LMHeadModel
-import numpy as np
-
-import logging
-logging.getLogger().setLevel(logging.CRITICAL)
-
-import warnings
-warnings.filterwarnings('ignore')
-
-# Rest of the code goes here...
